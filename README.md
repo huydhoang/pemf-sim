@@ -1,7 +1,7 @@
 # pemf-sim
 A series of calculations to simulate a PEMF device
 
-## Resistance, Current, MF Strength
+## Resistance, Wire Length, Current, MF Strength
 
 To calculate the magnetic field (MF) strength of the coil, we need to determine the magnetic field at the center of a solenoid. The formula for the magnetic field at the center of a solenoid is:
 
@@ -106,7 +106,7 @@ total_weight = wire_volume * copper_density
 
 ```
 
-## Power Dissipation and Temperature
+## Power Dissipation and Temperature Rise
 
 To calculate the **power dissipation** in the coil, we can use Joule's Law for power:
 
