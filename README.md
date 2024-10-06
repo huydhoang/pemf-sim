@@ -39,7 +39,7 @@ Where:
 
 We know the diameter of the coil, thickness of the wire, number of turns, and length of the coil, so we can calculate \( l \) and \( A \).
 
-"""python
+```python
 import math
 
 # Given values
@@ -70,6 +70,6 @@ mu_0 = 4 * math.pi * 1e-7
 # Calculate the magnetic field at the center of the solenoid
 B = mu_0 * (N * I) / coil_length
 B, I, R
-"""
+```
 
 ## 
