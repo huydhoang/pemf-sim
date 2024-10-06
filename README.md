@@ -72,21 +72,8 @@ B = mu_0 * (N * I) / coil_length
 B, I, R
 ```
 
-## Wire Length and Weight
+## Wire Weight
 
-1. **Wire Length**:  
-   The total length of the copper wire required to build the coil is calculated using the formula:
-
-   \[
-   \text{Total Length of Wire} = N \times \text{Length per Turn}
-   \]
-   Where:
-   - \( N \) is the number of turns (1000 turns),
-   - \( \text{Length per Turn} = \pi \times \text{Coil Diameter} \).
-
-   This gives the total wire length needed to wrap the coil.
-
-2. **Wire Weight**:  
    The weight of the wire is calculated by first determining its volume and then multiplying by the density of copper:
    
    \[
@@ -109,22 +96,7 @@ B, I, R
 
 
 ```python
-import math
-
-# Given values
-N = 1000  # number of turns
-coil_diameter = 75 / 1000  # coil diameter in meters
-wire_thickness = 0.5 / 1000  # wire thickness in meters
 copper_density = 8960  # density of copper in kg/m^3
-
-# Cross-sectional area of the wire
-A = math.pi * (wire_thickness / 2) ** 2
-
-# Length per turn (circumference of the coil)
-length_per_turn = math.pi * coil_diameter
-
-# Total length of the copper wire
-total_wire_length = length_per_turn * N
 
 # Volume of the copper wire
 wire_volume = A * total_wire_length
