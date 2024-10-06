@@ -106,7 +106,7 @@ total_weight = wire_volume * copper_density
 
 ```
 
-## Power Dissipation and Temperature Rise
+## Power Dissipation and Temperature
 
 To calculate the **power dissipation** in the coil, we can use Joule's Law for power:
 
